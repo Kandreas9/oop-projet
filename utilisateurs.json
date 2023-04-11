@@ -1,0 +1,83 @@
+[
+    {
+        "nom": "Dupont",
+        "prénom": "Jean",
+        "age": 23,
+        "adresse email": "jean.dupont@yopmail.com",
+        "type": "étudiant",
+        "livres": []
+    },
+    {
+        "nom": "Martin",
+        "prénom": "Alice",
+        "age": 28,
+        "adresse email": "alice.martin@yopmail.com",
+        "type": "enseignant",
+        "livres": []
+    },
+    {
+        "nom": "Leblanc",
+        "prénom": "Julie",
+        "age": 21,
+        "adresse email": "julie.leblanc@yopmail.com",
+        "type": "étudiant",
+        "livres": []
+    },
+    {
+        "nom": "Lefebvre",
+        "prénom": "Antoine",
+        "age": 32,
+        "adresse email": "antoine.lefebvre@yopmail.com",
+        "type": "normal",
+        "livres": []
+    },
+    {
+        "nom": "Girard",
+        "prénom": "Sophie",
+        "age": 19,
+        "adresse email": "sophie.girard@yopmail.com",
+        "type": "étudiant",
+        "livres": []
+    },
+    {
+        "nom": "Moreau",
+        "prénom": "Lucie",
+        "age": 25,
+        "adresse email": "lucie.moreau@yopmail.com",
+        "type": "enseignant",
+        "livres": []
+    },
+    {
+        "nom": "Tremblay",
+        "prénom": "Mélanie",
+        "age": 20,
+        "adresse email": "melanie.tremblay@yopmail.com",
+        "type": "étudiant",
+        "livres": []
+    },
+    {
+        "nom": "Gagnon",
+        "prénom": "Maxime",
+        "age": 29,
+        "adresse email": "maxime.gagnon@yopmail.com",
+        "type": "enseignant",
+        "livres": []
+    },
+    {
+        "nom": "Roy",
+        "prénom": "Alexandre",
+        "age": 22,
+        "adresse email": "alexandre.roy@yopmail.com",
+        "type": "étudiant",
+        "livres": []
+    },
+    {
+        "nom": "Bergeron",
+        "prénom": "Philippe",
+        "age": 31,
+        "adresse email": "philippe.bergeron@yopmail.com",
+        "type": "normal",
+        "livres": []
+    }
+]
+
