@@ -21,8 +21,7 @@ Bienvenue que désirez vous faire ?
                 """
         )
 
-        print ('===>', end=" ")
-        action = input()
+        action = self.customInput()
 
         match action:
             case '1':
@@ -30,6 +29,9 @@ Bienvenue que désirez vous faire ?
                 return True
             case '3':
                 self.borrowBook()
+                return True
+            case '4':
+                self.bookManagement()
                 return True
             case '6':
                 return False
@@ -46,7 +48,8 @@ Bienvenue que désirez vous faire ?
 
         for index, book in enumerate(books):
             if bookName in book['titre']:
-                disponible = 'Disponible' if book['disponible'] else 'Non Disponible'
+                print(book['disponible'])
+                disponible = 'Disponible' if book['disponible'] == 'True' else 'Non Disponible'
 
                 print('Livre correspondant à la recherche :')
                 print(f"nº {index} {book['titre']}: {disponible}")
@@ -69,8 +72,14 @@ Bienvenue que désirez vous faire ?
         file2.close()
 
         user = users[int(userId)]
-        
-        user['livres'].append(bookId)
+        book = books[int(bookId)]
+
+        if book['disponible'] == 'True':
+            user['livres'].append(bookId)
+            book['disponible'] = 'False'
+        else:
+            print('Book is unavailable.')
+            return
 
         if (len(user['livres']) == 3):
             bookInfo = books[-1]
@@ -79,14 +88,57 @@ Bienvenue que désirez vous faire ?
             print(f"{user['nom']} {user['prénom']} ne peut plus emprunter de livres")
         else:
             canBorrow = 3 - len(user['livres'])
-
-            bookInfo = books[-1]
             
-            print(f"{user['nom']} {user['prénom']} emprunte {bookInfo['titre']}")
+            print(f"{user['nom']} {user['prénom']} emprunte {book['titre']}")
 
-            writeFile = open('utilisateurs.json', 'w')
-            writeFile.write(json.dumps(users))
-            writeFile.close()
+            writeFileUser = open('utilisateurs.json', 'w')
+            writeFileUser.write(json.dumps(users, indent=4))
+            writeFileUser.close()
+
+            writeFileBook = open('livres.json', 'w')
+            writeFileBook.write(json.dumps(books, indent=4))
+            writeFileBook.close()
 
             print(f"{user['nom']} {user['prénom']} peut encore emprunter {canBorrow} livres.")
         
+    def bookManagement(self):
+        print(
+                """
+Que désirez vous faire ? 
+    1 modifier un livre
+    2 supprimer un livre
+    3 ajouter un libre
+    4 exit
+                """
+        )
+
+        bookAction = self.customInput()
+
+        match bookAction:
+            case '1':
+                # self.findBook()
+                return True
+            case '2':
+                # self.borrowBook()
+                return True
+            case '3':
+                # self.bookManagement()
+                return True
+            case '4':
+                return False
+            case _:
+                return True
+
+
+    def addBook(self):
+        print('Titre :')
+        title = self.customInput()
+        print('Auteur :')
+        author = self.customInput()
+        print('Année :')
+        year = self.customInput()
+        print('Editeur :')
+        editor = self.customInput()
+        print('Genre :')
+        genre = self.customInput()
+

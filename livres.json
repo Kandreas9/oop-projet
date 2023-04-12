@@ -1,242 +1,242 @@
 [
-  {
-    "auteur": "Gabriel García Márquez",
-    "titre": "Cent ans de solitude",
-    "editeur": "Le Livre de Poche",
-    "annee": "1967",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Franz Kafka",
-    "titre": "La Métamorphose",
-    "editeur": "Gallimard",
-    "annee": "1915",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Albert Camus",
-    "titre": "L'Étranger",
-    "editeur": "Gallimard",
-    "annee": "1942",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Gustave Flaubert",
-    "titre": "Madame Bovary",
-    "editeur": "Le Livre de Poche",
-    "annee": "1857",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Jules Verne",
-    "titre": "Voyage au centre de la Terre",
-    "editeur": "J'ai Lu",
-    "annee": "1864",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Marcel Proust",
-    "titre": "À la recherche du temps perdu",
-    "editeur": "Gallimard",
-    "annee": "1913",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "George Orwell",
-    "titre": "1984",
-    "editeur": "Gallimard",
-    "annee": "1949",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Antoine de Saint-Exupéry",
-    "titre": "Le Petit Prince",
-    "editeur": "Gallimard",
-    "annee": "1943",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Alexandre Dumas",
-    "titre": "Les Trois Mousquetaires",
-    "editeur": "Le Livre de Poche",
-    "annee": "1844",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Stendhal",
-    "titre": "Le Rouge et le Noir",
-    "editeur": "Gallimard",
-    "annee": "1830",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Victor Hugo",
-    "titre": "Les Misérables",
-    "editeur": "Le Livre de Poche",
-    "annee": "1862",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Émile Zola",
-    "titre": "Germinal",
-    "editeur": "Le Livre de Poche",
-    "annee": "1885",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Guy de Maupassant",
-    "titre": "Bel-Ami",
-    "editeur": "Larousse",
-    "annee": "1885",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Marguerite Duras",
-    "titre": "L'Amant",
-    "editeur": "Minuit",
-    "annee": "1984",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Françoise Sagan",
-    "titre": "Bonjour tristesse",
-    "editeur": "Julliard",
-    "annee": "1954",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Ernest Hemingway",
-    "titre": "Le Vieil Homme et la Mer",
-    "editeur": "Gallimard",
-    "annee": "1952",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Jules Renard",
-    "titre": "Poil de Carotte",
-    "editeur": "Le Livre de Poche",
-    "annee": "1894",
-    "genre": "Roman",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Jean-Paul Sartre",
-    "titre": "Les Mots",
-    "editeur": "Gallimard",
-    "annee": "1964",
-    "genre": "Autobiographie",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Paul Verlaine",
-    "titre": "Poèmes saturniens",
-    "editeur": "Gallimard",
-    "annee": "1866",
-    "genre": "Poésie",
-    "disponible": "True"
-  },
-  {
-    "auteur": "Arthur Rimbaud",
-    "titre": "Une Saison en enfer",
-    "editeur": "Gallimard",
-    "annee": "1873",
-    "genre": "Poésie",
-    "disponible": "True"
-  },
-  {
-    "titre": "Le cycle de Dune, tome 1 : Dune",
-    "auteur": "Frank Herbert",
-    "editeur": "Robert Laffont",
-    "annee": 1965,
-    "genre": "science-fiction",
-    "disponible": "True"
-  },
-  {
-    "titre": "Fondation",
-    "auteur": "Isaac Asimov",
-    "editeur": "Robert Laffont",
-    "annee": 1951,
-    "genre": "science-fiction",
-    "disponible": "True"
-  },
-  {
-    "titre": "La Guerre des mondes",
-    "auteur": "H.G. Wells",
-    "editeur": "Penguin Classics",
-    "annee": 1898,
-    "genre": "science-fiction",
-    "disponible": "True"
-  },
-  {
-    "titre": "La Tour sombre, tome 1 : Le Pistolero",
-    "auteur": "Stephen King",
-    "editeur": "J'ai lu",
-    "annee": 1982,
-    "genre": "médiéval fantastique",
-    "disponible": "True"
-  },
-  {
-    "titre": "L'Assassin royal, tome 1 : L'Apprenti assassin",
-    "auteur": "Robin Hobb",
-    "editeur": "Pygmalion",
-    "annee": 1995,
-    "genre": "médiéval fantastique",
-    "disponible": "True"
-  },
-  {
-    "titre": "Le Seigneur des anneaux, tome 1 : La Communauté de l'anneau",
-    "auteur": "J.R.R. Tolkien",
-    "editeur": "Christian Bourgois éditeur",
-    "annee": 1954,
-    "genre": "médiéval fantastique",
-    "disponible": "True"
-  },
-  {
-    "titre": "Le Guide du voyageur galactique",
-    "auteur": "Douglas Adams",
-    "editeur": "Le Livre de Poche",
-    "annee": 1979,
-    "genre": "science-fiction",
-    "disponible": "True"
-  },
-  {
-    "titre": "Le Cycle de la Culture, tome 1 : Consider Phlebas",
-    "auteur": "Iain M. Banks",
-    "editeur": "Le Livre de Poche",
-    "annee": 1987,
-    "genre": "science-fiction",
-    "disponible": "True"
-  },
-  {
-    "titre": "Le Cycle de Mars, tome 1 : Les Sables de Mars",
-    "auteur": "Edgar Rice Burroughs",
-    "editeur": "Bragelonne",
-    "annee": 1912,
-    "genre": "science-fiction",
-    "disponible": "True"
-  },
-  {
-    "titre": "Le Cycle de Dune, tome 2 : Le Messie de Dune",
-    "auteur": "Frank Herbert",
-    "editeur": "Robert Laffont",
-    "annee": 1969,
-    "genre": "science-fiction",
-    "disponible": "True"
-  }
+    {
+        "auteur": "Gabriel Garc\u00eda M\u00e1rquez",
+        "titre": "Cent ans de solitude",
+        "editeur": "Le Livre de Poche",
+        "annee": "1967",
+        "genre": "Roman",
+        "disponible": "False"
+    },
+    {
+        "auteur": "Franz Kafka",
+        "titre": "La M\u00e9tamorphose",
+        "editeur": "Gallimard",
+        "annee": "1915",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Albert Camus",
+        "titre": "L'\u00c9tranger",
+        "editeur": "Gallimard",
+        "annee": "1942",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Gustave Flaubert",
+        "titre": "Madame Bovary",
+        "editeur": "Le Livre de Poche",
+        "annee": "1857",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Jules Verne",
+        "titre": "Voyage au centre de la Terre",
+        "editeur": "J'ai Lu",
+        "annee": "1864",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Marcel Proust",
+        "titre": "\u00c0 la recherche du temps perdu",
+        "editeur": "Gallimard",
+        "annee": "1913",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "George Orwell",
+        "titre": "1984",
+        "editeur": "Gallimard",
+        "annee": "1949",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Antoine de Saint-Exup\u00e9ry",
+        "titre": "Le Petit Prince",
+        "editeur": "Gallimard",
+        "annee": "1943",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Alexandre Dumas",
+        "titre": "Les Trois Mousquetaires",
+        "editeur": "Le Livre de Poche",
+        "annee": "1844",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Stendhal",
+        "titre": "Le Rouge et le Noir",
+        "editeur": "Gallimard",
+        "annee": "1830",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Victor Hugo",
+        "titre": "Les Mis\u00e9rables",
+        "editeur": "Le Livre de Poche",
+        "annee": "1862",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "\u00c9mile Zola",
+        "titre": "Germinal",
+        "editeur": "Le Livre de Poche",
+        "annee": "1885",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Guy de Maupassant",
+        "titre": "Bel-Ami",
+        "editeur": "Larousse",
+        "annee": "1885",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Marguerite Duras",
+        "titre": "L'Amant",
+        "editeur": "Minuit",
+        "annee": "1984",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Fran\u00e7oise Sagan",
+        "titre": "Bonjour tristesse",
+        "editeur": "Julliard",
+        "annee": "1954",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Ernest Hemingway",
+        "titre": "Le Vieil Homme et la Mer",
+        "editeur": "Gallimard",
+        "annee": "1952",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Jules Renard",
+        "titre": "Poil de Carotte",
+        "editeur": "Le Livre de Poche",
+        "annee": "1894",
+        "genre": "Roman",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Jean-Paul Sartre",
+        "titre": "Les Mots",
+        "editeur": "Gallimard",
+        "annee": "1964",
+        "genre": "Autobiographie",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Paul Verlaine",
+        "titre": "Po\u00e8mes saturniens",
+        "editeur": "Gallimard",
+        "annee": "1866",
+        "genre": "Po\u00e9sie",
+        "disponible": "True"
+    },
+    {
+        "auteur": "Arthur Rimbaud",
+        "titre": "Une Saison en enfer",
+        "editeur": "Gallimard",
+        "annee": "1873",
+        "genre": "Po\u00e9sie",
+        "disponible": "True"
+    },
+    {
+        "titre": "Le cycle de Dune, tome 1 : Dune",
+        "auteur": "Frank Herbert",
+        "editeur": "Robert Laffont",
+        "annee": 1965,
+        "genre": "science-fiction",
+        "disponible": "True"
+    },
+    {
+        "titre": "Fondation",
+        "auteur": "Isaac Asimov",
+        "editeur": "Robert Laffont",
+        "annee": 1951,
+        "genre": "science-fiction",
+        "disponible": "True"
+    },
+    {
+        "titre": "La Guerre des mondes",
+        "auteur": "H.G. Wells",
+        "editeur": "Penguin Classics",
+        "annee": 1898,
+        "genre": "science-fiction",
+        "disponible": "True"
+    },
+    {
+        "titre": "La Tour sombre, tome 1 : Le Pistolero",
+        "auteur": "Stephen King",
+        "editeur": "J'ai lu",
+        "annee": 1982,
+        "genre": "m\u00e9di\u00e9val fantastique",
+        "disponible": "True"
+    },
+    {
+        "titre": "L'Assassin royal, tome 1 : L'Apprenti assassin",
+        "auteur": "Robin Hobb",
+        "editeur": "Pygmalion",
+        "annee": 1995,
+        "genre": "m\u00e9di\u00e9val fantastique",
+        "disponible": "True"
+    },
+    {
+        "titre": "Le Seigneur des anneaux, tome 1 : La Communaut\u00e9 de l'anneau",
+        "auteur": "J.R.R. Tolkien",
+        "editeur": "Christian Bourgois \u00e9diteur",
+        "annee": 1954,
+        "genre": "m\u00e9di\u00e9val fantastique",
+        "disponible": "True"
+    },
+    {
+        "titre": "Le Guide du voyageur galactique",
+        "auteur": "Douglas Adams",
+        "editeur": "Le Livre de Poche",
+        "annee": 1979,
+        "genre": "science-fiction",
+        "disponible": "True"
+    },
+    {
+        "titre": "Le Cycle de la Culture, tome 1 : Consider Phlebas",
+        "auteur": "Iain M. Banks",
+        "editeur": "Le Livre de Poche",
+        "annee": 1987,
+        "genre": "science-fiction",
+        "disponible": "True"
+    },
+    {
+        "titre": "Le Cycle de Mars, tome 1 : Les Sables de Mars",
+        "auteur": "Edgar Rice Burroughs",
+        "editeur": "Bragelonne",
+        "annee": 1912,
+        "genre": "science-fiction",
+        "disponible": "True"
+    },
+    {
+        "titre": "Le Cycle de Dune, tome 2 : Le Messie de Dune",
+        "auteur": "Frank Herbert",
+        "editeur": "Robert Laffont",
+        "annee": 1969,
+        "genre": "science-fiction",
+        "disponible": "True"
+    }
 ]
