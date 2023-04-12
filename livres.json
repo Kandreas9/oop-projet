@@ -238,5 +238,13 @@
         "annee": 1969,
         "genre": "science-fiction",
         "disponible": "True"
+    },
+    {
+        "auteur": "a",
+        "titre": "a",
+        "editeur": "a",
+        "annee": "a",
+        "genre": "a",
+        "disponible": "True"
     }
 ]

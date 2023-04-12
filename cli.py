@@ -122,7 +122,7 @@ Que désirez vous faire ?
                 # self.borrowBook()
                 return True
             case '3':
-                # self.bookManagement()
+                self.addBook()
                 return True
             case '4':
                 return False
@@ -141,4 +141,26 @@ Que désirez vous faire ?
         editor = self.customInput()
         print('Genre :')
         genre = self.customInput()
+
+        newBook = {
+            "auteur": author,
+            "titre": title,
+            "editeur": editor,
+            "annee": int(year),
+            "genre": genre,
+            "disponible": "True"
+        }
+
+        books = None
+
+        with open('livres.json') as file:
+            books = json.load(file)
+            books.append(newBook)
+            
+        with open('livres.json', 'w') as file:
+            json.dump(books, file, indent=4)
+            print('The book has been created!')
+
+
+
 
