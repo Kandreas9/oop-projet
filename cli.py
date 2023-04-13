@@ -27,6 +27,9 @@ Bienvenue que désirez vous faire ?
             case '1':
                 self.findBook()
                 return True
+            case '2':
+                self.findUser()
+                return True
             case '3':
                 self.borrowBook()
                 return True
@@ -51,7 +54,6 @@ Bienvenue que désirez vous faire ?
 
         for index, book in enumerate(books):
             if bookName in book['titre']:
-                print(book['disponible'])
                 disponible = 'Disponible' if book['disponible'] == 'True' else 'Non Disponible'
 
                 print('Livre correspondant à la recherche :')
@@ -84,13 +86,18 @@ Bienvenue que désirez vous faire ?
             print('Book is unavailable.')
             return
 
-        if (len(user['livres']) == 3):
+        if (user['type'] == '\u00e9tudiant' and len(user['livres']) == 4):
+            bookInfo = books[-1]
+
+            print(f"{user['nom']} {user['prénom']} emprunte {bookInfo['titre']}")
+            print(f"{user['nom']} {user['prénom']} ne peut plus emprunter de livres")
+        elif (user['type'] == 'normal' and len(user['livres']) == 3):
             bookInfo = books[-1]
 
             print(f"{user['nom']} {user['prénom']} emprunte {bookInfo['titre']}")
             print(f"{user['nom']} {user['prénom']} ne peut plus emprunter de livres")
         else:
-            canBorrow = 3 - len(user['livres'])
+            canBorrow = 3 - len(user['livres']) if user['type'] == '\u00e9tudiant' else 2 - len(user['livres'])
             
             print(f"{user['nom']} {user['prénom']} emprunte {book['titre']}")
 
@@ -320,4 +327,17 @@ Que désirez vous faire ?
         with open('utilisateurs.json', 'w') as file:
             json.dump(users, file, indent=4)
             print('The user has been updated!')
+
+    def findUser(self):
+        print('Quel user cherchez vous ?')
+
+        userName = self.customInput()
+
+        file = open('utilisateurs.json')
+        users = json.load(file)
+
+        for index, user in enumerate(users):
+            if userName == user['nom']:
+                print('User correspondant à la recherche :')
+                print(f"nº {index} {user['nom']} {user['prénom']}")
 

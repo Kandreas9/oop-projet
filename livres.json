@@ -1,15 +1,15 @@
 [
     {
-        "auteur": "a",
-        "titre": "a",
-        "editeur": "a",
-        "annee": 1,
-        "genre": "a",
-        "disponible": "False"
+        "auteur": "Gabriel García Márquez",
+        "titre": "Cent ans de solitude",
+        "editeur": "Le Livre de Poche",
+        "annee": "1967",
+        "genre": "Roman",
+        "disponible": "True"
     },
     {
         "auteur": "Franz Kafka",
-        "titre": "La M\u00e9tamorphose",
+        "titre": "La Métamorphose",
         "editeur": "Gallimard",
         "annee": "1915",
         "genre": "Roman",
@@ -17,7 +17,7 @@
     },
     {
         "auteur": "Albert Camus",
-        "titre": "L'\u00c9tranger",
+        "titre": "L'Étranger",
         "editeur": "Gallimard",
         "annee": "1942",
         "genre": "Roman",
@@ -41,7 +41,7 @@
     },
     {
         "auteur": "Marcel Proust",
-        "titre": "\u00c0 la recherche du temps perdu",
+        "titre": "À la recherche du temps perdu",
         "editeur": "Gallimard",
         "annee": "1913",
         "genre": "Roman",
@@ -56,7 +56,7 @@
         "disponible": "True"
     },
     {
-        "auteur": "Antoine de Saint-Exup\u00e9ry",
+        "auteur": "Antoine de Saint-Exupéry",
         "titre": "Le Petit Prince",
         "editeur": "Gallimard",
         "annee": "1943",
@@ -81,14 +81,14 @@
     },
     {
         "auteur": "Victor Hugo",
-        "titre": "Les Mis\u00e9rables",
+        "titre": "Les Misérables",
         "editeur": "Le Livre de Poche",
         "annee": "1862",
         "genre": "Roman",
         "disponible": "True"
     },
     {
-        "auteur": "\u00c9mile Zola",
+        "auteur": "Émile Zola",
         "titre": "Germinal",
         "editeur": "Le Livre de Poche",
         "annee": "1885",
@@ -112,7 +112,7 @@
         "disponible": "True"
     },
     {
-        "auteur": "Fran\u00e7oise Sagan",
+        "auteur": "Françoise Sagan",
         "titre": "Bonjour tristesse",
         "editeur": "Julliard",
         "annee": "1954",
@@ -145,10 +145,10 @@
     },
     {
         "auteur": "Paul Verlaine",
-        "titre": "Po\u00e8mes saturniens",
+        "titre": "Poèmes saturniens",
         "editeur": "Gallimard",
         "annee": "1866",
-        "genre": "Po\u00e9sie",
+        "genre": "Poésie",
         "disponible": "True"
     },
     {
@@ -156,7 +156,7 @@
         "titre": "Une Saison en enfer",
         "editeur": "Gallimard",
         "annee": "1873",
-        "genre": "Po\u00e9sie",
+        "genre": "Poésie",
         "disponible": "True"
     },
     {
@@ -188,7 +188,7 @@
         "auteur": "Stephen King",
         "editeur": "J'ai lu",
         "annee": 1982,
-        "genre": "m\u00e9di\u00e9val fantastique",
+        "genre": "médiéval fantastique",
         "disponible": "True"
     },
     {
@@ -196,15 +196,15 @@
         "auteur": "Robin Hobb",
         "editeur": "Pygmalion",
         "annee": 1995,
-        "genre": "m\u00e9di\u00e9val fantastique",
+        "genre": "médiéval fantastique",
         "disponible": "True"
     },
     {
-        "titre": "Le Seigneur des anneaux, tome 1 : La Communaut\u00e9 de l'anneau",
+        "titre": "Le Seigneur des anneaux, tome 1 : La Communauté de l'anneau",
         "auteur": "J.R.R. Tolkien",
-        "editeur": "Christian Bourgois \u00e9diteur",
+        "editeur": "Christian Bourgois éditeur",
         "annee": 1954,
-        "genre": "m\u00e9di\u00e9val fantastique",
+        "genre": "médiéval fantastique",
         "disponible": "True"
     },
     {
@@ -237,14 +237,6 @@
         "editeur": "Robert Laffont",
         "annee": 1969,
         "genre": "science-fiction",
-        "disponible": "True"
-    },
-    {
-        "auteur": "a",
-        "titre": "a",
-        "editeur": "a",
-        "annee": "a",
-        "genre": "a",
         "disponible": "True"
     }
 ]
