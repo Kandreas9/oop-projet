@@ -274,3 +274,17 @@ Que désirez vous faire ?
             json.dump(users, file, indent=4)
             print('The user has been created!')
 
+    def removeUser(self):
+        print('User Id :')
+        userId = self.customInput()
+
+        users = None
+
+        with open('utilisateurs.json') as file:
+            users = json.load(file)
+            del users[int(userId)]
+            
+        with open('utilisateurs.json', 'w') as file:
+            json.dump(users, file, indent=4)
+            print('The user has been removed!')
+
