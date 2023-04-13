@@ -201,6 +201,7 @@ Que désirez vous faire ?
         with open('livres.json') as file:
             books = json.load(file)
             books[int(bookId)] = {
+                        **books[int(bookId)],
                         "auteur": author,
                         "titre": title,
                         "editeur": editor,
@@ -287,4 +288,36 @@ Que désirez vous faire ?
         with open('utilisateurs.json', 'w') as file:
             json.dump(users, file, indent=4)
             print('The user has been removed!')
+
+    def updateUser(self):
+        print('User Id :')
+        userId = self.customInput()
+        print('Nom :')
+        nom = self.customInput()
+        print('Prenom :')
+        prenom = self.customInput()
+        print('Age :')
+        age = self.customInput()
+        print('Adresse email :')
+        email = self.customInput()
+        print('Type :')
+        userType = self.customInput()
+
+        users = None
+
+        with open('utilisateurs.json') as file:
+            users = json.load(file)
+            users[int(userId)] = {
+                **users[int(userId)],
+                "nom": nom,
+                "pr\u00e9nom": prenom,
+                "age": int(age),
+                "adresse email": email,
+                "type": userType,
+            }
+ 
+
+        with open('utilisateurs.json', 'w') as file:
+            json.dump(users, file, indent=4)
+            print('The user has been updated!')
 
