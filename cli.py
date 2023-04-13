@@ -119,7 +119,7 @@ Que désirez vous faire ?
                 # self.findBook()
                 return True
             case '2':
-                # self.borrowBook()
+                self.removeBook()
                 return True
             case '3':
                 self.addBook()
@@ -162,5 +162,18 @@ Que désirez vous faire ?
             print('The book has been created!')
 
 
+    def removeBook(self):
+        print('Book Id :')
+        bookId = self.customInput()
+
+        books = None
+
+        with open('livres.json') as file:
+            books = json.load(file)
+            del books[int(bookId)]
+            
+        with open('livres.json', 'w') as file:
+            json.dump(books, file, indent=4)
+            print('The book has been removed!')
 
 
