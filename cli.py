@@ -33,6 +33,9 @@ Bienvenue que désirez vous faire ?
             case '4':
                 self.bookManagement()
                 return True
+            case '5':
+                self.userManagement()
+                return True
             case '6':
                 return False
             case _:
@@ -107,7 +110,7 @@ Bienvenue que désirez vous faire ?
 Que désirez vous faire ? 
     1 modifier un livre
     2 supprimer un livre
-    3 ajouter un libre
+    3 ajouter un livre
     4 exit
                 """
         )
@@ -210,4 +213,64 @@ Que désirez vous faire ?
             json.dump(books, file, indent=4)
             print('The book has been updated!')
 
+
+    def userManagement(self):
+        print(
+                """
+Que désirez vous faire ? 
+    1 modifier un user
+    2 supprimer un user
+    3 ajouter un user
+    4 exit
+                """
+        )
+
+        userAction = self.customInput()
+
+        match userAction:
+            case '1':
+                self.updateUser()
+                return True
+            case '2':
+                self.removeUser()
+                return True
+            case '3':
+                self.addUser()
+                return True
+            case '4':
+                return False
+            case _:
+                return True
+
+    def addUser(self):
+        print('Nom :')
+        nom = self.customInput()
+        print('Prenom :')
+        prenom = self.customInput()
+        print('Age :')
+        age = self.customInput()
+        print('Adresse email :')
+        email = self.customInput()
+        print('Type :')
+        userType = self.customInput()
+
+
+        newUser = {
+            "nom": nom,
+            "pr\u00e9nom": prenom,
+            "age": int(age),
+            "adresse email": email,
+            "type": userType,
+            "livres": []
+        }
+
+        users = None
+
+        with open('utilisateurs.json') as file:
+            users = json.load(file)
+            users.append(newUser)
+            
+        with open('utilisateurs.json', 'w') as file:
+            json.dump(users, file, indent=4)
+            print('The user has been created!')
 

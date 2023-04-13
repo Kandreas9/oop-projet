@@ -13,10 +13,7 @@
         "age": 28,
         "adresse email": "alice.martin@yopmail.com",
         "type": "enseignant",
-        "livres": [
-            "1",
-            "0"
-        ]
+        "livres": ["1", "0"]
     },
     {
         "nom": "Leblanc",
