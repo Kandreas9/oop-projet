@@ -116,7 +116,7 @@ Que désirez vous faire ?
 
         match bookAction:
             case '1':
-                # self.findBook()
+                self.updateBook()
                 return True
             case '2':
                 self.removeBook()
@@ -175,5 +175,39 @@ Que désirez vous faire ?
         with open('livres.json', 'w') as file:
             json.dump(books, file, indent=4)
             print('The book has been removed!')
+
+    
+    def updateBook(self):
+        print('Book Id :')
+        bookId = self.customInput()
+        print('Titre :')
+        title = self.customInput()
+        print('Auteur :')
+        author = self.customInput()
+        print('Année :')
+        year = self.customInput()
+        print('Editeur :')
+        editor = self.customInput()
+        print('Genre :')
+        genre = self.customInput()
+        print('Availability :')
+        availability = self.customInput()
+
+        books = None
+
+        with open('livres.json') as file:
+            books = json.load(file)
+            books[int(bookId)] = {
+                        "auteur": author,
+                        "titre": title,
+                        "editeur": editor,
+                        "annee": int(year),
+                        "genre": genre,
+                        "disponible": availability
+            } 
+
+        with open('livres.json', 'w') as file:
+            json.dump(books, file, indent=4)
+            print('The book has been updated!')
 
 
