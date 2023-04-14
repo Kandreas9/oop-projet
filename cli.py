@@ -13,7 +13,7 @@ class Cli:
                 """
 Bienvenue que désirez vous faire ? 
     1 Chercher un livre
-    2 Choisir un utilisateur
+    2 Chercher un utilisateur
     3 Emprunter un livre
     4 Gestion des livres
     5 Gestion des utilisateurs
@@ -365,16 +365,72 @@ Que désirez vous faire ?
             json.dump(users, file, indent=4)
             print('The user has been updated!')
 
+    # def findUser(self):
+    #     print('Quel user cherchez vous ?')
+    #
+    #     userName = self.customInput()
+    #
+    #     file = open('utilisateurs.json')
+    #     users = json.load(file)
+    #
+    #     for index, user in enumerate(users):
+    #         if userName == user['nom']:
+    #             print('User correspondant à la recherche :')
+    #             print(f"nº {index} {user['nom']} {user['prénom']}")
+    #
+    #
     def findUser(self):
-        print('Quel user cherchez vous ?')
+        print(
+            """
+Que désirez vous faire ? 
+1 Chercher par nom
+2 Chercher par prenom
+3 Chercher par email
+4 exit
+            """
+        )
 
-        userName = self.customInput()
+        findAction = self.customInput()
 
-        file = open('utilisateurs.json')
-        users = json.load(file)
+        match findAction:
+            case '1':
+                file = open('utilisateurs.json')
+                users = json.load(file)
+                userInput = input("Entrer le prenom de l'utilisateur : ")
+                userLastname = userInput.capitalize()
+                for index, user in enumerate(users):
+                    if userLastname in user['nom']:
+                        exist = "l'utilisateur existe" if user['nom'] is not None else "L'utilisateur n'existe pas"
 
-        for index, user in enumerate(users):
-            if userName == user['nom']:
-                print('User correspondant à la recherche :')
-                print(f"nº {index} {user['nom']} {user['prénom']}")
+                        print("L'utilisateur correspondant à la recherche :")
+                        print(f"nº{index}, {user['nom']}: {exist}")
+                return True
+            case '2':
+                file = open('utilisateurs.json')
+                users = json.load(file)
+                userInput = input("Entrer le prenom de l'utilisateur : ")
+                userFirstname = userInput.capitalize()
+
+                for index, user in enumerate(users):
+                    if userFirstname in user['prénom']:
+                        exist = "l'utilisateur existe" if user['prénom'] is not None else "L'utilisateur n'existe pas"
+
+                        print("L'utilisateur correspondant à la recherche :")
+                        print(f"nº{index}, {user['prénom']}: {exist}")
+                return True
+            case '3':
+                file = open('utilisateurs.json')
+                users = json.load(file)
+                userEmail = input("Entrer l'email de l'utilisateur : ")
+                for index, user in enumerate(users):
+                    if userEmail in user['adresse email']:
+                        exist = "l'utilisateur existe" if user['adresse email'] is not None else "L'utilisateur n'existe pas"
+
+                        print("L'utilisateur correspondant à la recherche :")
+                        print(f"nº{index}, {user['adresse email']}: {exist}")
+                return True
+            case '4':
+                return False
+            case _:
+                return True
 
