@@ -45,19 +45,56 @@ Bienvenue que désirez vous faire ?
                 return True
 
     def findBook(self):
-        print('Quel livre cherchez vous ?')
+        print(
+            """
+Que désirez vous faire ? 
+1 Chercher par nom
+2 Chercher par auteur
+3 Chercher par style
+4 exit
+            """
+        )
 
-        bookName = self.customInput()
+        findAction = self.customInput()
 
-        file = open('livres.json')
-        books = json.load(file)
+        match findAction:
+            case '1':
+                file = open('livres.json')
+                books = json.load(file)
+                bookName = input("Entrer le titre du livre : ")
+                for index, book in enumerate(books):
+                    if bookName in book['titre']:
+                        disponible = 'Disponible' if book['disponible'] == 'True' else 'Non Disponible'
 
-        for index, book in enumerate(books):
-            if bookName in book['titre']:
-                disponible = 'Disponible' if book['disponible'] == 'True' else 'Non Disponible'
+                        print('Livre correspondant à la recherche :')
+                        print(f"nº {index} {book['titre']}: {disponible}")
+                return True
+            case '2':
+                file = open('livres.json')
+                books = json.load(file)
+                bookAuthor = input("Entrer le titre du livre : ")
+                for index, book in enumerate(books):
+                    if bookAuthor in book['auteur']:
+                        disponible = 'Disponible' if book['disponible'] == 'True' else 'Non Disponible'
 
-                print('Livre correspondant à la recherche :')
-                print(f"nº {index} {book['titre']}: {disponible}")
+                        print('Livre correspondant à la recherche :')
+                        print(f"nº {index} {book['auteur']}: {disponible}")
+                return True
+            case '3':
+                file = open('livres.json')
+                books = json.load(file)
+                bookStyle = input("Entrer le titre du livre : ")
+                for index, book in enumerate(books):
+                    if bookStyle in book['genre']:
+                        disponible = 'Disponible' if book['disponible'] == 'True' else 'Non Disponible'
+
+                        print('Livre correspondant à la recherche :')
+                        print(f"nº {index} {book['genre']}: {disponible}")
+                return True
+            case '4':
+                return False
+            case _:
+                return True
 
     def borrowBook(self):
         print("Quel est le numéro de l'utilisateur ?")
